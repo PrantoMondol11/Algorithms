@@ -3,6 +3,8 @@ def fib(n,dp):
         return 0
     elif n==1:
         return 1
+    elif dp[n]!=-1:
+        return dp[n]
     else:
         dp[n]=fib(n-1,dp)+fib(n-2,dp)
 
